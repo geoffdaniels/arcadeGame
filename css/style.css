@@ -1,0 +1,178 @@
+body, html {
+    text-align: center;
+    font-family: 'Coda', cursive;
+    margin: auto;
+    min-width: 725px;
+    max-width: 725px;
+    align-self: center;
+
+}
+
+
+h2, img {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 725px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center {
+  margin: auto;
+  padding: 0;
+}
+/* GAME DATA */
+.gameData {
+    text-align: left;
+    width: 550px;
+    margin-bottom: 10px;
+}
+
+/* STARS */
+.gameData .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.stars {
+  float: left;
+  color: gold;
+}
+
+/* STAR LIST STYLING */
+.gameData .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.level {
+  margin-left: 1.5em;
+}
+
+.moves {
+  margin-left: 0.5em;
+}
+
+/* CHARACTERS */
+
+.characters {
+  margin: 15px 75px 0 0px;
+  float: right;
+  height: 505px;
+}
+
+.characters li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.characters li:hover {
+  transform: scale(1.5);
+}
+
+.characters li img {
+  width: 5em;
+  height: 7em;
+}
+
+/* MODAL */
+.modal-box {
+  position: fixed;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+/* MODAL MESSAGE STYLING */
+.modal-message {
+  position: relative;
+  padding: 0.5em;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+  top: 15%;
+  left: 40%;
+  background: #fff;
+}
+
+.modal-message h2 {
+  margin: 0 0.5em ;
+}
+
+/* LINE BREAK STYLING */
+.line {
+  border-bottom: 1px solid black;
+  margin: 0.5em;
+}
+
+
+.finish-message {
+  color: blue;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+
+}
+
+.replay {
+  cursor: pointer;
+}
+
+
+
+
+/* DISABLE CARDS */
+.disable {
+  pointer-events: none;
+}
+
+/* MODAL CLOSE BUTTON */
+.close {
+  position: absolute;
+  font-weight: bold;
+  top: 13px;
+  right: 20px;
+  color: blue;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* PLAY AGAIN BUTTON */
+.button {
+  display: flex;
+  justify-content: center;
+}
+.replay {
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+  background: #02ccba;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+
+}

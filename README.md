@@ -35,12 +35,11 @@ Languages:
 * CSS
 * JS
 
-Frameworks/Libraries/APIs:
 
-* [Font Awesome](https://fontawesome.com/) - Font and icon toolkit for stars
 
 ## Acknowledgments
 
+* [Font Awesome](https://fontawesome.com/) - Font and icon toolkit for stars
 * Udacity review courses
 * Udacity student forums
 * W3 Schools

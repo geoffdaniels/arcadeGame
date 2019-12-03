@@ -98,7 +98,7 @@ function Player(x,y) {
 
 //SELECT CHARACTER ICON - HAD TO LOAD ALL OTHER CHARACTERS IN ENGINE TO DO THIS
 function charSelect(i) {
-  player.player = 'images/'+i.target.src.split('/').pop();
+  player.sprite = 'images/'+i.target.src.split('/').pop();
 }
 
 

@@ -93,7 +93,7 @@ function Player(x,y) {
   this.x = playerX;
   this.y = playerY;
   //CHARACTER IMAGE - BOY RIGHT NOW; FUTURE ATTEMPT TO SELECT CHARACTER
-  this.player = person;
+  this.sprite = person;
 };
 
 //SELECT CHARACTER ICON - HAD TO LOAD ALL OTHER CHARACTERS IN ENGINE TO DO THIS
@@ -117,7 +117,7 @@ Player.prototype.update = function(dt) {
 
 
 Player.prototype.render = function() {
-  ctx.drawImage(Resources.get(this.player), this.x, this.y);
+  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 Player.prototype.handleInput = function(keyPress) {

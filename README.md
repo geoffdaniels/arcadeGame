@@ -42,5 +42,6 @@ Languages:
 * [Font Awesome](https://fontawesome.com/) - Font and icon toolkit for stars
 * Udacity review courses
 * Udacity student forums
-* W3 Schools
+* [W3 Schools] (https://www.w3schools.com/js/default.asp) - Learn JavaScript
+* [GitHub - Matthew Cranford Arcade Game] (https://github.com/MatthewCranford/fend-arcade-game) - for reference/sanity check
 * Google searches

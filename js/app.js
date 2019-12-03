@@ -10,7 +10,7 @@ var Enemy = function(x, y, speed) {
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
 };
-//SET LEVEL FOR GAME START
+//SET VARIABLES FOR GAME START
 let floor = document.getElementById('level-number')
 let level = 1;
 let skips = document.querySelector('.moves')
@@ -23,11 +23,12 @@ let finalMoves = document.querySelector('.final-moves');
 let finalStars = document.querySelector('.final-stars');
 let replayButton = document.querySelector('.replay');
 let finalSkips = 0;
-let person = 'images/char-boy.png';
 let characters = document.querySelector('.characters')
 
+//EVENT LISTENER FOR CHARACTER SELECTION
 characters.addEventListener('click', charSelect)
 
+//RESET BOARD FUNCTION
 function resetBoard(e) {
   modal.classList.add('hidden');
   modalUp = false;
@@ -38,6 +39,7 @@ function resetBoard(e) {
   resetStar();
 }
 
+//RESET BOARD EVENTS
 close.addEventListener('click', resetBoard)
 
 replayButton.addEventListener('click', resetBoard)
@@ -93,7 +95,7 @@ function Player(x,y) {
   this.x = playerX;
   this.y = playerY;
   //CHARACTER IMAGE - BOY RIGHT NOW; FUTURE ATTEMPT TO SELECT CHARACTER
-  this.sprite = person;
+  this.sprite = 'images/char-boy.png';
 };
 
 //SELECT CHARACTER ICON - HAD TO LOAD ALL OTHER CHARACTERS IN ENGINE TO DO THIS
@@ -218,7 +220,7 @@ enemyLocation.forEach(locationY => {
 // Place the player object in a variable called player
 const playerX = 202;
 const playerY = 405;
-let player = new Player(playerX, playerY, person);
+let player = new Player(playerX, playerY);
 
 
 // This listens for key presses and sends the keys to your
